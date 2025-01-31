@@ -19,7 +19,7 @@ export function FormSignIn() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 w-full">
         <FormField
           control={form.control}
           name="email"
@@ -48,7 +48,9 @@ export function FormSignIn() {
           )}
         />
 
-        <Button type="submit">Submit</Button>
+        <Button className="w-full" type="submit">
+          Submit
+        </Button>
       </form>
     </Form>
   );
